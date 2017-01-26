@@ -1,4 +1,6 @@
+host?=localhost
+
 provision:
-	mongo --host localhost < collection.js
+	mongo --host $(host) < collection.js
 
 .PHONY: provision
